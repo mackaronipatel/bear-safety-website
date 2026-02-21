@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Complete Guide to Bear Safety</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- STICKY NAV -->
+<nav id="navbar" class="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">
+      <svg viewBox="0 0 28 28" class="nav-paw" width="22" height="22"><circle cx="7" cy="6" r="3.2"/><circle cx="14" cy="3.5" r="3.2"/><circle cx="21" cy="6" r="3.2"/><ellipse cx="14" cy="16" rx="7.5" ry="9"/></svg>
+      Bear Safety
+    </a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links">
+      <a href="#comparison">Identification</a>
+      <a href="#range-maps">Range Maps</a>
+      <a href="#bear-spray">Bear Spray</a>
+      <a href="#statistics">Statistics</a>
+      <a href="#gear">Gear</a>
+      <a href="#encounter">Encounters</a>
+      <a href="#story">Story</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ======================== HERO SECTION ======================== -->
+<section id="hero" class="hero">
+  <div class="hero-bg-mountains">
+    <svg viewBox="0 0 1440 600" preserveAspectRatio="none" class="hero-mountain-svg">
+      <!-- Sky gradient -->
+      <defs>
+        <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#87A878"/>
+          <stop offset="100%" stop-color="#4A7C59"/>
+        </linearGradient>
+        <linearGradient id="mtnGrad1" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#2D5016"/>
+          <stop offset="100%" stop-color="#1a3a0d"/>
+        </linearGradient>
+        <linearGradient id="mtnGrad2" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#3a6324"/>
+          <stop offset="100%" stop-color="#2D5016"/>
+        </linearGradient>
+      </defs>
+      <!-- Far mountains -->
+      <polygon points="0,400 120,200 250,320 380,150 500,280 620,180 750,300 900,120 1050,260 1200,170 1350,250 1440,200 1440,600 0,600" fill="url(#mtnGrad2)" opacity="0.5"/>
+      <!-- Near mountains -->
+      <polygon points="0,450 80,280 200,380 350,200 500,350 650,220 800,340 950,180 1100,300 1250,220 1440,320 1440,600 0,600" fill="url(#mtnGrad1)" opacity="0.7"/>
+      <!-- Pine trees silhouette -->
+      <g fill="#1a3a0d" opacity="0.9">
+        <!-- Tree cluster left -->
+        <polygon points="30,600 50,420 70,600"/>
+        <polygon points="60,600 85,380 110,600"/>
+        <polygon points="100,600 118,430 136,600"/>
+        <polygon points="140,600 165,400 190,600"/>
+        <polygon points="180,600 198,440 216,600"/>
+        <!-- Tree cluster middle-left -->
+        <polygon points="350,600 375,390 400,600"/>
+        <polygon points="390,600 410,420 430,600"/>
+        <polygon points="420,600 445,370 470,600"/>
+        <!-- Tree cluster middle-right -->
+        <polygon points="800,600 825,400 850,600"/>
+        <polygon points="840,600 860,430 880,600"/>
+        <polygon points="870,600 895,380 920,600"/>
+        <polygon points="920,600 940,420 960,600"/>
+        <!-- Tree cluster right -->
+        <polygon points="1200,600 1225,390 1250,600"/>
+        <polygon points="1250,600 1275,410 1300,600"/>
+        <polygon points="1300,600 1320,430 1340,600"/>
+        <polygon points="1350,600 1380,380 1410,600"/>
+        <polygon points="1400,600 1420,420 1440,600"/>
+      </g>
+      <!-- Ground -->
+      <rect x="0" y="550" width="1440" height="50" fill="#1a3a0d"/>
+    </svg>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <svg viewBox="0 0 120 120" width="100" height="100" class="hero-badge-svg">
+        <circle cx="60" cy="60" r="56" fill="none" stroke="#F5E6C8" stroke-width="2"/>
+        <circle cx="60" cy="60" r="50" fill="none" stroke="#F5E6C8" stroke-width="1"/>
+        <text x="60" y="35" text-anchor="middle" fill="#F5E6C8" font-family="Lora" font-size="8" letter-spacing="3">OFFICIAL GUIDE</text>
+        <!-- Bear paw -->
+        <circle cx="44" cy="52" r="4.5" fill="#F5E6C8"/>
+        <circle cx="60" cy="47" r="4.5" fill="#F5E6C8"/>
+        <circle cx="76" cy="52" r="4.5" fill="#F5E6C8"/>
+        <ellipse cx="60" cy="68" rx="12" ry="14" fill="#F5E6C8"/>
+        <text x="60" y="100" text-anchor="middle" fill="#F5E6C8" font-family="Lora" font-size="7" letter-spacing="2">BEAR COUNTRY</text>
+      </svg>
+    </div>
+    <h1 class="hero-title">The Complete Guide to<br><span>Bear Safety</span></h1>
+    <p class="hero-subtitle">Everything you need to know to stay safe in bear country</p>
+    <div class="hero-divider">
+      <svg width="200" height="20" viewBox="0 0 200 20">
+        <line x1="0" y1="10" x2="80" y2="10" stroke="#F5E6C8" stroke-width="1"/>
+        <polygon points="95,3 100,10 105,3" fill="#F5E6C8"/>
+        <polygon points="95,17 100,10 105,17" fill="#F5E6C8"/>
+        <line x1="120" y1="10" x2="200" y2="10" stroke="#F5E6C8" stroke-width="1"/>
+      </svg>
+    </div>
+  </div>
+  <a href="#comparison" class="scroll-indicator" aria-label="Scroll down">
+    <span>Explore</span>
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M12 5v14M5 12l7 7 7-7"/>
+    </svg>
+  </a>
+</section>
+
+<!-- ======================== COMPARISON SECTION ======================== -->
+<section id="comparison" class="section comparison-section">
+  <div class="section-header">
+    <span class="section-number">01</span>
+    <h2>Know Your Bears</h2>
+    <p class="section-subtitle">Accurate identification can save your life. Learn the key differences between black bears and grizzly bears.</p>
+  </div>
+
+  <div class="bear-comparison-grid">
+    <!-- Black Bear Card -->
+    <div class="bear-card black-bear-card" data-aos="fade-right">
+      <div class="bear-card-header">
+        <div class="bear-photo-wrapper">
+          <img src="black-bear.jpg" alt="American Black Bear standing in a stream" class="bear-photo">
+        </div>
+        <h3>Black Bear</h3>
+        <p class="scientific-name"><em>Ursus americanus</em></p>
+        <span class="photo-credit">Photo: Britannica / British Columbia</span>
+      </div>
+      <div class="bear-card-body">
+        <div class="stat-row"><span class="stat-label">Weight (Male)</span><span class="stat-value">130–660 lbs <small>(avg ~250)</small></span></div>
+        <div class="stat-row"><span class="stat-label">Weight (Female)</span><span class="stat-value">88–331 lbs</span></div>
+        <div class="stat-row"><span class="stat-label">Shoulder Height</span><span class="stat-value">2–3.5 ft</span></div>
+        <div class="stat-row"><span class="stat-label">Standing Height</span><span class="stat-value">5–7 ft</span></div>
+        <div class="stat-row highlight-row"><span class="stat-label">Shoulder Hump</span><span class="stat-value no-marker">NO — highest point is rump</span></div>
+        <div class="stat-row"><span class="stat-label">Face Profile</span><span class="stat-value">Straight (Roman-nosed)</span></div>
+        <div class="stat-row"><span class="stat-label">Ears</span><span class="stat-value">Tall, pointed, erect</span></div>
+        <div class="stat-row"><span class="stat-label">Claws</span><span class="stat-value">&lt;2 in, dark, sharply curved</span></div>
+        <div class="stat-row"><span class="stat-label">Climbing</span><span class="stat-value yes-marker">Excellent tree climber</span></div>
+        <div class="stat-row"><span class="stat-label">Population (N.A.)</span><span class="stat-value">~600,000–900,000</span></div>
+        <div class="stat-row"><span class="stat-label">US Range</span><span class="stat-value">37–40 states</span></div>
+        <div class="stat-row"><span class="stat-label">Temperament</span><span class="stat-value">Less aggressive, prefers to flee</span></div>
+        <div class="stat-row"><span class="stat-label">Colors</span><span class="stat-value">Black (70%), brown, cinnamon, blonde, blue-gray, cream/white</span></div>
+      </div>
+    </div>
+
+    <!-- VS Divider -->
+    <div class="vs-divider">
+      <div class="vs-circle">VS</div>
+    </div>
+
+    <!-- Grizzly Bear Card -->
+    <div class="bear-card grizzly-bear-card" data-aos="fade-left">
+      <div class="bear-card-header grizzly-header">
+        <div class="bear-photo-wrapper">
+          <img src="grizzly-bear.jpg" alt="Grizzly bear sow in the wild" class="bear-photo">
+        </div>
+        <h3>Grizzly Bear</h3>
+        <p class="scientific-name"><em>Ursus arctos horribilis</em></p>
+        <span class="photo-credit">Photo: Jim Peaco / NPS</span>
+      </div>
+      <div class="bear-card-body">
+        <div class="stat-row"><span class="stat-label">Weight (Male)</span><span class="stat-value">330–1,150 lbs <small>(avg 400–600)</small></span></div>
+        <div class="stat-row"><span class="stat-label">Weight (Female)</span><span class="stat-value">270–770 lbs</span></div>
+        <div class="stat-row"><span class="stat-label">Shoulder Height</span><span class="stat-value">3–5 ft</span></div>
+        <div class="stat-row"><span class="stat-label">Standing Height</span><span class="stat-value">6–8 ft <small>(up to 10 ft coastal)</small></span></div>
+        <div class="stat-row highlight-row"><span class="stat-label">Shoulder Hump</span><span class="stat-value yes-marker">YES — prominent, highest point</span></div>
+        <div class="stat-row"><span class="stat-label">Face Profile</span><span class="stat-value">Concave / dished</span></div>
+        <div class="stat-row"><span class="stat-label">Ears</span><span class="stat-value">Small, round</span></div>
+        <div class="stat-row"><span class="stat-label">Claws</span><span class="stat-value">2–4 in, light/pale, gently curved</span></div>
+        <div class="stat-row"><span class="stat-label">Climbing</span><span class="stat-value no-marker">Adults cannot climb trees</span></div>
+        <div class="stat-row"><span class="stat-label">Population (N.A.)</span><span class="stat-value">~55,000–85,000 <small>(~1,500–2,000 lower 48)</small></span></div>
+        <div class="stat-row"><span class="stat-label">US Range</span><span class="stat-value">5 states: AK, MT, WY, WA, ID</span></div>
+        <div class="stat-row"><span class="stat-label">Temperament</span><span class="stat-value">More aggressive, defensive attacks common</span></div>
+        <div class="stat-row"><span class="stat-label">Colors</span><span class="stat-value">Dark brown, blonde, reddish, nearly black, silver-tipped</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ID Quiz / Flip Cards -->
+  <div class="id-tips-section">
+    <h3 class="subsection-title">🔍 Quick Identification Tips</h3>
+    <p class="subsection-desc">Click each card to reveal the identification detail</p>
+    <div class="flip-cards-grid">
+      <div class="flip-card" onclick="this.classList.toggle('flipped')">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <span class="flip-number">1</span>
+            <span class="flip-question">Most reliable feature?</span>
+          </div>
+          <div class="flip-card-back">
+            <strong>Shoulder Hump</strong>
+            <p>Grizzlies have a prominent muscular hump. Black bears do not — their highest point is the rump.</p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" onclick="this.classList.toggle('flipped')">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <span class="flip-number">2</span>
+            <span class="flip-question">Check the face profile</span>
+          </div>
+          <div class="flip-card-back">
+            <strong>Dished = Grizzly</strong>
+            <p>Grizzly bears have a concave, dished face profile. Black bears have a straight, Roman-nosed profile.</p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" onclick="this.classList.toggle('flipped')">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <span class="flip-number">3</span>
+            <span class="flip-question">Can you rely on color?</span>
+          </div>
+          <div class="flip-card-back">
+            <strong>NEVER rely on color alone!</strong>
+            <p>Black bears can be brown, blonde, or cinnamon. Grizzlies can be nearly black. Color is unreliable.</p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" onclick="this.classList.toggle('flipped')">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <span class="flip-number">4</span>
+            <span class="flip-question">Ear shape matters</span>
+          </div>
+          <div class="flip-card-back">
+            <strong>Tall & Pointed = Black Bear</strong>
+            <p>Black bears have tall, prominent, pointed ears. Grizzly ears are small and round, almost hidden in fur.</p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" onclick="this.classList.toggle('flipped')">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <span class="flip-number">5</span>
+            <span class="flip-question">Look at the claws</span>
+          </div>
+          <div class="flip-card-back">
+            <strong>Short & Dark = Black Bear</strong>
+            <p>Black bear claws are &lt;2", dark, curved. Grizzly claws are 2–4", pale/light, gently curved — built for digging.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== RANGE MAPS SECTION ======================== -->
+<section id="range-maps" class="section range-maps-section">
+  <div class="section-header">
+    <span class="section-number">02</span>
+    <h2>Where Bears Live</h2>
+    <p class="section-subtitle">Interactive range maps showing black bear and grizzly bear distribution across the United States.</p>
+  </div>
+
+  <div class="maps-toggle">
+    <button class="map-tab active" data-map="black" onclick="switchMap('black')">Black Bear Range</button>
+    <button class="map-tab" data-map="grizzly" onclick="switchMap('grizzly')">Grizzly Bear Range</button>
+  </div>
+
+  <div class="map-container">
+    <div id="map-black" class="map-panel active">
+      <div class="map-legend">
+        <div class="legend-item"><span class="legend-color" style="background:#4A7C59"></span> Black Bear Present</div>
+        <div class="legend-item"><span class="legend-color" style="background:#ccc"></span> No Black Bears</div>
+      </div>
+      <div class="map-svg-wrapper">
+        <svg id="svg-map-black" viewBox="0 0 959 593" class="us-map-svg"></svg>
+      </div>
+      <p class="map-caption">Hover over states to see details. Black bears are found in 40+ states across the US.</p>
+    </div>
+    <div id="map-grizzly" class="map-panel">
+      <div class="map-legend">
+        <div class="legend-item"><span class="legend-color" style="background:#8B4513"></span> Grizzly Bear Present</div>
+        <div class="legend-item"><span class="legend-color" style="background:#ccc"></span> No Grizzly Bears</div>
+      </div>
+      <div class="map-svg-wrapper">
+        <svg id="svg-map-grizzly" viewBox="0 0 959 593" class="us-map-svg"></svg>
+      </div>
+      <p class="map-caption">Grizzly bears are found in only 5 US states, with Alaska holding the largest population.</p>
+    </div>
+    <div id="map-tooltip" class="map-tooltip"></div>
+  </div>
+</section>
+
+<!-- ======================== BEAR SPRAY SECTION ======================== -->
+<section id="bear-spray" class="section spray-section">
+  <div class="section-header">
+    <span class="section-number">03</span>
+    <h2>How to Use Bear Spray</h2>
+    <p class="section-subtitle">Bear spray is the single most effective tool for surviving a bear encounter. Learn how to use it properly.</p>
+  </div>
+
+  <!-- Effectiveness callout -->
+  <div class="effectiveness-banner">
+    <div class="eff-stat">
+      <div class="eff-bar-container">
+        <div class="eff-bar spray-bar" data-width="92">
+          <span class="eff-bar-label">Bear Spray</span>
+          <span class="eff-bar-pct">92%</span>
+        </div>
+      </div>
+      <div class="eff-bar-container">
+        <div class="eff-bar firearms-bar" data-width="67">
+          <span class="eff-bar-label">Firearms</span>
+          <span class="eff-bar-pct">67%</span>
+        </div>
+      </div>
+      <p class="eff-note">Effectiveness at deterring aggressive bears — <em>Smith et al., Journal of Wildlife Management</em></p>
+    </div>
+  </div>
+
+  <!-- Key facts -->
+  <div class="spray-facts-grid">
+    <div class="spray-fact">
+      <div class="spray-fact-icon">🌶️</div>
+      <h4>Active Ingredient</h4>
+      <p>Oleoresin capsicum (OC) derived from hot peppers. Causes immediate swelling of eyes, nose, throat, and lungs.</p>
+    </div>
+    <div class="spray-fact">
+      <div class="spray-fact-icon">📏</div>
+      <h4>Range</h4>
+      <p>Shoots 16–40 feet depending on brand. Much farther than personal pepper spray or mace.</p>
+    </div>
+    <div class="spray-fact">
+      <div class="spray-fact-icon">✅</div>
+      <h4>Legal Everywhere</h4>
+      <p>Legal across the US and Canada. Carry it in a chest holster for instant access — never in your pack.</p>
+    </div>
+    <div class="spray-fact">
+      <div class="spray-fact-icon">📅</div>
+      <h4>Expiration</h4>
+      <p>Replace every 3–4 years. Check the expiration date before every trip. Practice drawing from the holster.</p>
+    </div>
+  </div>
+
+  <!-- Step-by-Step Deployment Guide -->
+  <div class="spray-steps-section">
+    <h3 class="subsection-title">How to Deploy Bear Spray — Step by Step</h3>
+    <p class="subsection-desc">Memorize these six steps before you hit the trail. In a real encounter, you won't have time to think.</p>
+    <div class="spray-steps-grid">
+      <div class="spray-step-card">
+        <div class="step-number">1</div>
+        <h4>Carry It Ready</h4>
+        <p>Keep bear spray in a chest or hip holster — never buried in your pack. You need it accessible within 2 seconds.</p>
+      </div>
+      <div class="spray-step-card">
+        <div class="step-number">2</div>
+        <h4>Remove Safety Clip</h4>
+        <p>Flip the orange safety tab with your thumb in one swift motion. Practice this at home until it's muscle memory.</p>
+      </div>
+      <div class="spray-step-card">
+        <div class="step-number">3</div>
+        <h4>Wait</h4>
+        <p>Don't spray too early. Let the bear close to 30–60 feet. Spraying at longer range wastes your limited supply.</p>
+      </div>
+      <div class="spray-step-card">
+        <div class="step-number">4</div>
+        <h4>Aim Low, Slightly Down</h4>
+        <p>Point toward the ground in front of the bear, not at its face. The spray creates a cloud the bear runs into.</p>
+      </div>
+      <div class="spray-step-card">
+        <div class="step-number">5</div>
+        <h4>Spray 3–5 Seconds</h4>
+        <p>Use short, firm bursts to build a wall of capsaicin between you and the bear. Adjust your aim as needed.</p>
+      </div>
+      <div class="spray-step-card">
+        <div class="step-number">6</div>
+        <h4>Back Slowly Away</h4>
+        <p>Once the bear retreats, leave the area calmly. Do not run. Keep the canister ready in case it returns.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cinematic Auto-Playing Bear Spray Demo -->
+  <div class="spray-demo" id="spray-demo-container">
+    <h3 class="subsection-title">Bear Spray Demo — Cinematic Animation</h3>
+    <p class="subsection-desc">Watch the full encounter sequence. The animation plays automatically and loops.</p>
+
+    <!-- Phase label -->
+    <div class="anim-phase-label" id="anim-phase-label">SPOT THE BEAR</div>
+
+    <!-- SVG Animation Stage -->
+    <div class="anim-stage-wrapper">
+      <svg id="spray-anim-svg" viewBox="0 0 800 320" class="spray-anim-svg">
+        <!-- Sky -->
+        <defs>
+          <linearGradient id="anim-sky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#b8d4a0"/>
+            <stop offset="100%" stop-color="#8cbf6e"/>
+          </linearGradient>
+          <linearGradient id="anim-ground-grad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#6B8F5B"/>
+            <stop offset="100%" stop-color="#4a6e3e"/>
+          </linearGradient>
+          <radialGradient id="spray-cloud-grad" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="rgba(255,120,30,0.7)"/>
+            <stop offset="100%" stop-color="rgba(255,80,0,0)"/>
+          </radialGradient>
+        </defs>
+        <rect x="0" y="0" width="800" height="320" fill="url(#anim-sky)"/>
+        <!-- Mountains bg -->
+        <polygon points="0,200 60,140 130,180 200,120 280,170 360,110 440,160 520,100 600,150 680,120 760,160 800,130 800,320 0,320" fill="#7aa85e" opacity="0.35"/>
+        <!-- Trees -->
+        <polygon points="40,260 55,200 70,260" fill="#4a6e3e" opacity="0.5"/>
+        <polygon points="90,260 102,210 114,260" fill="#4a6e3e" opacity="0.4"/>
+        <polygon points="700,260 715,190 730,260" fill="#4a6e3e" opacity="0.5"/>
+        <polygon points="740,260 752,215 764,260" fill="#4a6e3e" opacity="0.4"/>
+        <!-- Ground -->
+        <rect x="0" y="260" width="800" height="60" fill="url(#anim-ground-grad)"/>
+        <!-- Trail line -->
+        <line x1="0" y1="268" x2="800" y2="268" stroke="#5a7c48" stroke-width="2" stroke-dasharray="8,6" opacity="0.4"/>
+
+        <!-- HIKER GROUP -->
+        <g id="anim-hiker" transform="translate(140,155)">
+          <!-- Backpack -->
+          <rect x="2" y="32" width="18" height="28" rx="4" fill="#4A7C59" opacity="0.9"/>
+          <rect x="5" y="35" width="12" height="6" rx="2" fill="#3a6324" opacity="0.7"/>
+          <!-- Body -->
+          <line x1="12" y1="28" x2="12" y2="68" stroke="#5a3a2a" stroke-width="5" stroke-linecap="round"/>
+          <!-- Head -->
+          <circle cx="12" cy="20" r="12" fill="#d4a574"/>
+          <!-- Hat -->
+          <ellipse cx="12" cy="14" rx="14" ry="4" fill="#6B3A2A"/>
+          <rect x="4" y="6" width="16" height="10" rx="3" fill="#6B3A2A"/>
+          <!-- Eyes -->
+          <circle cx="8" cy="20" r="1.5" fill="#333"/>
+          <circle cx="16" cy="20" r="1.5" fill="#333"/>
+          <!-- Left arm -->
+          <line id="hiker-arm-l" x1="12" y1="35" x2="-6" y2="55" stroke="#5a3a2a" stroke-width="4" stroke-linecap="round"/>
+          <!-- Right arm -->
+          <line id="hiker-arm-r" x1="12" y1="35" x2="30" y2="55" stroke="#5a3a2a" stroke-width="4" stroke-linecap="round"/>
+          <!-- Legs -->
+          <line id="hiker-leg-l" x1="12" y1="68" x2="2" y2="100" stroke="#5a3a2a" stroke-width="4" stroke-linecap="round"/>
+          <line id="hiker-leg-r" x1="12" y1="68" x2="22" y2="100" stroke="#5a3a2a" stroke-width="4" stroke-linecap="round"/>
+          <!-- Boots -->
+          <ellipse cx="2" cy="102" rx="5" ry="3" fill="#4a3020"/>
+          <ellipse cx="22" cy="102" rx="5" ry="3" fill="#4a3020"/>
+          <!-- Spray can (on holster, hidden initially) -->
+          <rect id="hiker-spray-can" x="20" y="38" width="8" height="16" rx="2" fill="#e05020" opacity="0"/>
+          <!-- Alert icon -->
+          <g id="hiker-alert" opacity="0">
+            <circle cx="12" cy="-8" r="10" fill="#c0392b" opacity="0.9"/>
+            <text x="12" y="-3" text-anchor="middle" fill="#fff" font-size="14" font-weight="bold" font-family="sans-serif">!</text>
+          </g>
+        </g>
+
+        <!-- SPRAY CLOUD GROUP -->
+        <g id="anim-spray-cloud" opacity="0">
+          <ellipse cx="420" cy="210" rx="40" ry="30" fill="rgba(255,130,30,0.5)"/>
+          <ellipse cx="380" cy="220" rx="35" ry="25" fill="rgba(255,100,20,0.4)"/>
+          <ellipse cx="460" cy="215" rx="45" ry="28" fill="rgba(255,140,40,0.45)"/>
+          <ellipse cx="440" cy="235" rx="30" ry="20" fill="rgba(255,110,25,0.35)"/>
+          <ellipse cx="400" cy="200" rx="50" ry="22" fill="rgba(255,90,10,0.3)"/>
+          <ellipse cx="470" cy="230" rx="25" ry="18" fill="rgba(255,150,50,0.3)"/>
+        </g>
+
+        <!-- BEAR GROUP -->
+        <g id="anim-bear" transform="translate(750,170)">
+          <!-- Body -->
+          <ellipse id="bear-main-body" cx="0" cy="50" rx="40" ry="28" fill="#8B4513"/>
+          <!-- Shoulder hump -->
+          <ellipse cx="-10" cy="30" rx="18" ry="12" fill="#9B5523"/>
+          <!-- Head -->
+          <g id="bear-head-g">
+            <ellipse cx="-38" cy="38" rx="16" ry="14" fill="#8B4513"/>
+            <!-- Snout -->
+            <ellipse cx="-48" cy="42" rx="8" ry="6" fill="#A07040"/>
+            <!-- Nose -->
+            <circle cx="-52" cy="40" r="3" fill="#333"/>
+            <!-- Eye -->
+            <circle cx="-40" cy="34" r="2.5" fill="#fff"/>
+            <circle cx="-40" cy="34" r="1.3" fill="#111"/>
+            <!-- Ears -->
+            <circle cx="-30" cy="24" r="6" fill="#8B4513"/>
+            <circle cx="-30" cy="24" r="3.5" fill="#A07040"/>
+            <circle cx="-44" cy="26" r="6" fill="#8B4513"/>
+            <circle cx="-44" cy="26" r="3.5" fill="#A07040"/>
+          </g>
+          <!-- Legs -->
+          <rect x="-28" y="72" width="12" height="24" rx="5" fill="#6B3A2A"/>
+          <rect x="-12" y="72" width="12" height="24" rx="5" fill="#6B3A2A"/>
+          <rect x="14" y="72" width="12" height="24" rx="5" fill="#6B3A2A"/>
+          <rect x="28" y="72" width="12" height="24" rx="5" fill="#6B3A2A"/>
+          <!-- Tail -->
+          <ellipse cx="38" cy="35" rx="8" ry="5" fill="#7a3d12" transform="rotate(-20 38 35)"/>
+        </g>
+
+        <!-- CALLOUT ANNOTATIONS -->
+        <g id="anim-callouts" font-family="'Source Sans 3', sans-serif" font-size="12" font-weight="600">
+          <g id="callout-1" opacity="0">
+            <rect x="300" y="130" width="180" height="30" rx="6" fill="rgba(45,80,22,0.9)"/>
+            <text x="390" y="150" text-anchor="middle" fill="#fff">Aim slightly downward</text>
+            <line x1="390" y1="160" x2="390" y2="200" stroke="rgba(45,80,22,0.6)" stroke-width="1.5" stroke-dasharray="4,3"/>
+          </g>
+          <g id="callout-2" opacity="0">
+            <rect x="320" y="140" width="170" height="30" rx="6" fill="rgba(192,57,43,0.9)"/>
+            <text x="405" y="160" text-anchor="middle" fill="#fff">2-3 second bursts</text>
+          </g>
+          <g id="callout-3" opacity="0">
+            <rect x="340" y="170" width="160" height="30" rx="6" fill="rgba(139,69,19,0.9)"/>
+            <text x="420" y="190" text-anchor="middle" fill="#fff">Create a spray wall</text>
+          </g>
+        </g>
+      </svg>
+
+      <!-- Play/Pause button -->
+      <button id="anim-play-pause" class="anim-play-pause" onclick="toggleSprayAnim()" aria-label="Pause animation">
+        <svg id="anim-pause-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+          <rect x="4" y="3" width="4" height="14" rx="1"/>
+          <rect x="12" y="3" width="4" height="14" rx="1"/>
+        </svg>
+        <svg id="anim-play-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" style="display:none">
+          <polygon points="5,3 17,10 5,17"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Progress bar -->
+    <div class="anim-progress-bar">
+      <div class="anim-progress-track">
+        <div class="anim-progress-fill" id="anim-progress-fill"></div>
+      </div>
+      <div class="anim-phase-indicators">
+        <div class="anim-phase-dot active" data-phase="0"><span>Spot</span></div>
+        <div class="anim-phase-dot" data-phase="1"><span>Draw</span></div>
+        <div class="anim-phase-dot" data-phase="2"><span>Aim</span></div>
+        <div class="anim-phase-dot" data-phase="3"><span>Spray</span></div>
+        <div class="anim-phase-dot" data-phase="4"><span>Retreat</span></div>
+        <div class="anim-phase-dot" data-phase="5"><span>Back Away</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== STATISTICS SECTION ======================== -->
+<section id="statistics" class="section stats-section">
+  <div class="section-header">
+    <span class="section-number">04</span>
+    <h2>Bear Attack Statistics</h2>
+    <p class="section-subtitle">Data-driven insights on bear attack fatalities across North America from 2005 to 2025.</p>
+  </div>
+
+  <!-- Callout Cards -->
+  <div class="stats-callouts">
+    <div class="callout-card">
+      <div class="callout-number">~73</div>
+      <div class="callout-text">Total fatalities 2005–2025<br><small>avg 3.5 per year</small></div>
+    </div>
+    <div class="callout-card accent">
+      <div class="callout-number">92%</div>
+      <div class="callout-text">Bear spray effectiveness<br><small>vs 67% for firearms</small></div>
+    </div>
+    <div class="callout-card">
+      <div class="callout-number">70%+</div>
+      <div class="callout-text">Attacks happen June–September<br><small>August is peak for grizzlies</small></div>
+    </div>
+    <div class="callout-card">
+      <div class="callout-number">⚡ &gt; 🐻</div>
+      <div class="callout-text">You're more likely to be killed by lightning than by a bear</div>
+    </div>
+  </div>
+
+  <!-- Charts -->
+  <div class="charts-grid">
+    <div class="chart-card full-width">
+      <h4>Bear Attack Fatalities by Year (2005–2025)</h4>
+      <div class="chart-wrapper"><canvas id="chart-yearly"></canvas></div>
+    </div>
+    <div class="chart-card">
+      <h4>Fatalities by Species (2005–2025)</h4>
+      <div class="chart-wrapper square"><canvas id="chart-species"></canvas></div>
+    </div>
+    <div class="chart-card">
+      <h4>Attack Circumstances</h4>
+      <div class="chart-wrapper square"><canvas id="chart-circumstances"></canvas></div>
+    </div>
+    <div class="chart-card full-width">
+      <h4>Fatalities by Location (Top Regions)</h4>
+      <div class="chart-wrapper"><canvas id="chart-location"></canvas></div>
+    </div>
+  </div>
+
+  <div class="stats-trend-note">
+    <div class="trend-icon">📈</div>
+    <p><strong>Trending upward:</strong> The 2020s average ~4.5 fatalities/year compared to ~3/year in the 2010s. Expanding human activity in bear habitat and growing bear populations contribute to increasing encounters.</p>
+  </div>
+</section>
+
+<!-- ======================== GEAR LIST SECTION ======================== -->
+<section id="gear" class="section gear-section">
+  <div class="section-header">
+    <span class="section-number">05</span>
+    <h2>Backpacking Gear List</h2>
+    <p class="section-subtitle">Essential bear safety gear for your next backcountry trip. Filter by category and priority.</p>
+  </div>
+
+  <div class="gear-filters">
+    <button class="gear-filter active" data-filter="all" onclick="filterGear('all')">All Gear</button>
+    <button class="gear-filter" data-filter="spray" onclick="filterGear('spray')">Bear Spray</button>
+    <button class="gear-filter" data-filter="canister" onclick="filterGear('canister')">Canisters</button>
+    <button class="gear-filter" data-filter="bag" onclick="filterGear('bag')">Bear Bags</button>
+    <button class="gear-filter" data-filter="accessory" onclick="filterGear('accessory')">Accessories</button>
+  </div>
+
+  <div class="gear-grid" id="gear-grid">
+    <!-- Bear Spray -->
+    <div class="gear-card" data-category="spray">
+      <div class="gear-badge essential">Essential</div>
+      <div class="gear-badge best">Best Overall</div>
+      <h4>Counter Assault 10.2oz</h4>
+      <div class="gear-price">$64–70</div>
+      <ul class="gear-specs">
+        <li><strong>Range:</strong> 40 ft</li>
+        <li><strong>Spray Time:</strong> 8 sec</li>
+        <li><strong>Weight:</strong> 10.2 oz</li>
+      </ul>
+      <p class="gear-note">Industry gold standard. Longest range available. Used by rangers and guides.</p>
+    </div>
+
+    <div class="gear-card" data-category="spray">
+      <div class="gear-badge essential">Essential</div>
+      <div class="gear-badge value">Best Value</div>
+      <h4>Frontiersman MAX 9.2oz</h4>
+      <div class="gear-price">$42–53</div>
+      <ul class="gear-specs">
+        <li><strong>Range:</strong> 35–40 ft</li>
+        <li><strong>Weight:</strong> 9.2 oz</li>
+      </ul>
+      <p class="gear-note">Excellent performance at a lower price. Great choice for budget-conscious hikers.</p>
+    </div>
+
+    <div class="gear-card" data-category="spray">
+      <div class="gear-badge essential">Essential</div>
+      <h4>UDAP 7.9oz</h4>
+      <div class="gear-price">$45–60</div>
+      <ul class="gear-specs">
+        <li><strong>Range:</strong> 30–35 ft</li>
+        <li><strong>Weight:</strong> 7.9 oz — Lightest</li>
+      </ul>
+      <p class="gear-note">Created by a grizzly attack survivor. Lightest option for ultralight backpackers.</p>
+    </div>
+
+    <div class="gear-card" data-category="spray">
+      <div class="gear-badge essential">Essential</div>
+      <h4>Guard Alaska 9oz</h4>
+      <div class="gear-price">$40–61</div>
+      <ul class="gear-specs">
+        <li><strong>Range:</strong> 15–20 ft</li>
+        <li><strong>Spray Time:</strong> 9 sec — Longest</li>
+        <li><strong>Weight:</strong> 9 oz</li>
+      </ul>
+      <p class="gear-note">Longest spray duration gives you extra chances. Shorter range requires more courage.</p>
+    </div>
+
+    <!-- Bear Canisters -->
+    <div class="gear-card" data-category="canister">
+      <div class="gear-badge essential">Essential</div>
+      <div class="gear-badge best">Most Popular</div>
+      <h4>BearVault BV500</h4>
+      <div class="gear-price">$80–100</div>
+      <ul class="gear-specs">
+        <li><strong>Volume:</strong> 11.5L</li>
+        <li><strong>Weight:</strong> 2 lb 8 oz</li>
+      </ul>
+      <p class="gear-note">Clear lid lets you see contents. Easy to open for humans, impossible for bears. IGBC approved.</p>
+    </div>
+
+    <div class="gear-card" data-category="canister">
+      <div class="gear-badge essential">Essential</div>
+      <h4>Counter Assault Bear Keg</h4>
+      <div class="gear-price">$100–115</div>
+      <ul class="gear-specs">
+        <li><strong>Volume:</strong> 11.7L</li>
+        <li><strong>Weight:</strong> 3 lb 11 oz — Most Secure</li>
+      </ul>
+      <p class="gear-note">Tank-like construction. Heaviest but most bear-resistant canister on the market.</p>
+    </div>
+
+    <div class="gear-card" data-category="canister">
+      <div class="gear-badge essential">Essential</div>
+      <h4>Bare Boxer Champ</h4>
+      <div class="gear-price">$95–105</div>
+      <ul class="gear-specs">
+        <li><strong>Volume:</strong> 12L</li>
+        <li><strong>Weight:</strong> 2 lb 10 oz</li>
+      </ul>
+      <p class="gear-note">Widest regulatory acceptance. Approved in all major parks requiring canisters.</p>
+    </div>
+
+    <div class="gear-card" data-category="canister">
+      <div class="gear-badge essential">Essential</div>
+      <div class="gear-badge value">Best Budget</div>
+      <h4>Garcia Backpacker's Cache</h4>
+      <div class="gear-price">$70–85</div>
+      <ul class="gear-specs">
+        <li><strong>Volume:</strong> 10L</li>
+        <li><strong>Weight:</strong> 2 lb 11 oz</li>
+      </ul>
+      <p class="gear-note">Original bear canister. Reliable and affordable. Slightly smaller capacity.</p>
+    </div>
+
+    <!-- Bear Bags -->
+    <div class="gear-card" data-category="bag">
+      <div class="gear-badge recommended">Recommended</div>
+      <h4>Ursack Major</h4>
+      <div class="gear-price">$119–125</div>
+      <ul class="gear-specs">
+        <li><strong>Weight:</strong> 7.6 oz</li>
+        <li>IGBC approved</li>
+      </ul>
+      <p class="gear-note">Kevlar-like fabric resists bear teeth and claws. Fraction of the weight of hard canisters.</p>
+    </div>
+
+    <div class="gear-card" data-category="bag">
+      <div class="gear-badge recommended">Recommended</div>
+      <h4>ULA Bear Bag Kit</h4>
+      <div class="gear-price">$50</div>
+      <ul class="gear-specs">
+        <li><strong>Weight:</strong> 4.8 oz</li>
+        <li>Complete PCT hang kit</li>
+      </ul>
+      <p class="gear-note">Includes carabiner, line, and stuff sack. Popular on the Pacific Crest Trail.</p>
+    </div>
+
+    <div class="gear-card" data-category="bag">
+      <div class="gear-badge nice">Nice to Have</div>
+      <h4>Zpacks Bear Bagging Kit</h4>
+      <div class="gear-price">$50–60</div>
+      <ul class="gear-specs">
+        <li><strong>Weight:</strong> 3.4 oz — Ultralight</li>
+      </ul>
+      <p class="gear-note">Lightest bear bagging kit available. For dedicated gram-counters.</p>
+    </div>
+
+    <!-- Accessories -->
+    <div class="gear-card" data-category="accessory">
+      <div class="gear-badge essential">Essential</div>
+      <h4>LOKSAK OPSAK Odor-Proof Bags</h4>
+      <div class="gear-price">$14–16</div>
+      <p class="gear-note">Blocks all food odors. Use inside your canister or bear bag for double protection. Absolutely essential.</p>
+    </div>
+
+    <div class="gear-card" data-category="accessory">
+      <div class="gear-badge recommended">Recommended</div>
+      <h4>Frontiersman Air Horn 130dB</h4>
+      <div class="gear-price">$12–15</div>
+      <p class="gear-note">Ear-splitting 130dB blast. Effective at scaring bears from a distance. Compact and lightweight.</p>
+    </div>
+
+    <div class="gear-card" data-category="accessory">
+      <div class="gear-badge essential">Essential</div>
+      <h4>Bear Spray Chest Holster</h4>
+      <div class="gear-price">$15–35</div>
+      <p class="gear-note">Keeps bear spray instantly accessible on your chest. Never hike with spray in your pack.</p>
+    </div>
+
+    <div class="gear-card" data-category="accessory">
+      <div class="gear-badge recommended">Recommended</div>
+      <h4>Headlamp with Red Mode</h4>
+      <div class="gear-price">$40–65</div>
+      <p class="gear-note">Red light preserves night vision and is less likely to attract curious wildlife to camp.</p>
+    </div>
+
+    <div class="gear-card" data-category="accessory">
+      <div class="gear-badge recommended">Recommended</div>
+      <h4>First Aid Kit</h4>
+      <div class="gear-price">$25–50</div>
+      <p class="gear-note">Carry a wilderness-rated first aid kit. Include trauma bandages for worst-case scenarios.</p>
+    </div>
+  </div>
+
+  <div class="gear-warning">
+    <div class="warning-icon">⚠️</div>
+    <div>
+      <strong>Bear bells are NOT recommended.</strong>
+      <p>Studies show bear bells are largely ineffective. Bears may not hear them until too close, and the sound doesn't replicate human voices. Instead, talk loudly, clap, or call out "Hey bear!" regularly on the trail.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== ENCOUNTER RESPONSE SECTION ======================== -->
+<section id="encounter" class="section encounter-section">
+  <div class="section-header">
+    <span class="section-number">06</span>
+    <h2>Bear Encounter Response Guide</h2>
+    <p class="section-subtitle">An interactive decision tree to guide your response during a bear encounter.</p>
+  </div>
+
+  <div class="flowchart" id="flowchart">
+    <!-- Start -->
+    <div class="flow-node start-node active" id="flow-start">
+      <div class="flow-question">Do you see a bear?</div>
+      <div class="flow-actions">
+        <button class="flow-btn yes" onclick="flowNext('aware')">Yes</button>
+        <button class="flow-btn no" onclick="flowNext('nobear')">No (heard noises)</button>
+      </div>
+    </div>
+
+    <div class="flow-node" id="flow-nobear">
+      <div class="flow-answer safe">
+        <h4>Make Noise & Leave</h4>
+        <p>Make loud noises — talk, clap, call out "Hey bear!" Back away slowly from the area. Give the bear space to leave on its own.</p>
+      </div>
+      <button class="flow-reset" onclick="flowReset()">Start Over</button>
+    </div>
+
+    <div class="flow-node" id="flow-aware">
+      <div class="flow-question">Is the bear aware of you?</div>
+      <div class="flow-actions">
+        <button class="flow-btn" onclick="flowNext('notaware')">No</button>
+        <button class="flow-btn" onclick="flowNext('species')">Yes</button>
+      </div>
+    </div>
+
+    <div class="flow-node" id="flow-notaware">
+      <div class="flow-answer safe">
+        <h4>Quietly Back Away</h4>
+        <p>Don't startle it. Detour widely around the bear. Move downwind so it doesn't catch your scent. Make gentle noise from a distance so the bear knows you're there without being surprised.</p>
+      </div>
+      <button class="flow-reset" onclick="flowReset()">Start Over</button>
+    </div>
+
+    <div class="flow-node" id="flow-species">
+      <div class="flow-question">What species is it?</div>
+      <div class="flow-actions">
+        <button class="flow-btn black" onclick="flowNext('black-type')">Black Bear</button>
+        <button class="flow-btn grizzly" onclick="flowNext('grizzly-type')">Grizzly Bear</button>
+        <button class="flow-btn" onclick="flowNext('unsure')">Not Sure</button>
+      </div>
+    </div>
+
+    <div class="flow-node" id="flow-unsure">
+      <div class="flow-answer caution">
+        <h4>Treat It as a Grizzly</h4>
+        <p>When in doubt, assume grizzly. Follow grizzly bear protocols — they are generally more dangerous. Look for the shoulder hump and dished face.</p>
+      </div>
+      <div class="flow-actions">
+        <button class="flow-btn grizzly" onclick="flowNext('grizzly-type')">Continue with Grizzly Protocol</button>
+      </div>
+    </div>
+
+    <div class="flow-node" id="flow-black-type">
+      <div class="flow-question">Is the black bear's behavior defensive or predatory?</div>
+      <p class="flow-hint"><strong>Defensive:</strong> huffing, jaw-popping, swatting ground, ears back — usually a mother with cubs or surprised bear.<br><strong>Predatory:</strong> stalking, following you, circling, intensely focused, no stress signals.</p>
+      <div class="flow-actions">
+        <button class="flow-btn" onclick="flowNext('black-defensive')">Defensive</button>
+        <button class="flow-btn danger" onclick="flowNext('black-predatory')">Predatory</button>
+      </div>
+    </div>
+
+    <div class="flow-node" id="flow-black-defensive">
+      <div class="flow-answer caution">
+        <h4>Stand Your Ground</h4>
+        <ul>
+          <li>Make yourself look big — raise arms, stand on rock</li>
+          <li>Talk firmly: "Hey bear, go away bear"</li>
+          <li>Use bear spray if it charges (within 30–40 ft)</li>
+          <li>Back away slowly when safe</li>
+          <li>Do NOT play dead with a black bear</li>
+        </ul>
+      </div>
+      <button class="flow-reset" onclick="flowReset()">Start Over</button>
+    </div>
+
+    <div class="flow-node" id="flow-black-predatory">
+      <div class="flow-answer danger">
+        <h4>FIGHT BACK with Everything</h4>
+        <ul>
+          <li>This is extremely rare but serious</li>
+          <li>Do NOT play dead — the bear sees you as prey</li>
+          <li>Use bear spray first</li>
+          <li>Fight aggressively: kick, punch, use rocks/sticks</li>
+          <li>Target the nose and eyes</li>
+          <li>Never give up — fight with everything you have</li>
+        </ul>
+      </div>
+      <button class="flow-reset" onclick="flowReset()">Start Over</button>
+    </div>
+
+    <div class="flow-node" id="flow-grizzly-type">
+      <div class="flow-question">Is the grizzly's behavior defensive or predatory?</div>
+      <p class="flow-hint"><strong>Defensive:</strong> huffing, jaw-popping, bluff charges, woofing — protecting cubs, food, or personal space.<br><strong>Predatory:</strong> stalking silently, following persistently, approaching at night.</p>
+      <div class="flow-actions">
+        <button class="flow-btn" onclick="flowNext('grizzly-defensive')">Defensive</button>
+        <button class="flow-btn danger" onclick="flowNext('grizzly-predatory')">Predatory</button>
+      </div>
+    </div>
+
+    <div class="flow-node" id="flow-grizzly-defensive">
+      <div class="flow-answer caution">
+        <h4>Use Bear Spray, Then Play Dead</h4>
+        <ul>
+          <li>Use bear spray if the bear charges within range</li>
+          <li>If contact is made: PLAY DEAD</li>
+          <li>Lie flat on stomach, face down</li>
+          <li>Clasp hands behind your neck</li>
+          <li>Spread legs to resist being flipped</li>
+          <li>Keep your pack on for protection</li>
+          <li>Stay still until the bear leaves the area</li>
+          <li>Wait several minutes before moving</li>
+        </ul>
+      </div>
+      <button class="flow-reset" onclick="flowReset()">Start Over</button>
+    </div>
+
+    <div class="flow-node" id="flow-grizzly-predatory">
+      <div class="flow-answer danger">
+        <h4>FIGHT BACK — Do NOT Play Dead</h4>
+        <ul>
+          <li>A predatory grizzly will not stop if you play dead</li>
+          <li>Use bear spray immediately</li>
+          <li>Fight back aggressively</li>
+          <li>Use any weapon: rocks, sticks, trekking poles</li>
+          <li>Target the nose and eyes</li>
+          <li>Make as much noise as possible</li>
+          <li>This is a fight for survival — never give up</li>
+        </ul>
+      </div>
+      <button class="flow-reset" onclick="flowReset()">Start Over</button>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== STORY SECTION ======================== -->
+<section id="story" class="section story-section">
+  <div class="section-header">
+    <span class="section-number">07</span>
+    <h2>The Meadow Meeting</h2>
+    <p class="section-subtitle">A short story about mutual respect in bear country</p>
+  </div>
+
+  <div class="story-container">
+    <div class="story-decoration left">
+      <svg viewBox="0 0 60 200" class="story-tree">
+        <polygon points="30,10 5,80 55,80" fill="#4A7C59" opacity="0.7"/>
+        <polygon points="30,40 8,100 52,100" fill="#3a6324" opacity="0.8"/>
+        <polygon points="30,65 10,120 50,120" fill="#2D5016" opacity="0.9"/>
+        <rect x="25" y="120" width="10" height="30" fill="#6B3A2A"/>
+      </svg>
+      <svg viewBox="0 0 60 200" class="story-tree small">
+        <polygon points="30,30 12,80 48,80" fill="#4A7C59" opacity="0.6"/>
+        <polygon points="30,50 14,95 46,95" fill="#3a6324" opacity="0.7"/>
+        <rect x="26" y="95" width="8" height="20" fill="#6B3A2A"/>
+      </svg>
+    </div>
+
+    <div class="story-text">
+      <div class="story-dropcap">T</div>
+      <p>he morning mist hung low over Elk Meadow like a silver quilt, threading between stalks of wild lupine and the feathered tops of beargrass. The sun had barely climbed above the ridgeline when Huckleberry poked his nose out from behind a thicket of huckleberry bushes — his namesake and, not coincidentally, his breakfast.</p>
+
+      <p>Huckleberry was a two-year-old black bear, roughly the size of a large dog and still clumsy in the particular way that young bears are clumsy: all shoulders and curiosity, with paws that seemed a size too big for his ambitions. His mother had pushed him out on his own the previous spring, and he was still learning the rhythms of the mountain — which berries were ripe, which logs hid the fattest grubs, and which sounds meant danger.</p>
+
+      <p>This morning, a new sound caught his attention. Not the crack of a branch under elk hooves, not the scolding chatter of a squirrel. Something rhythmic. Something <em>humming</em>.</p>
+
+      <p>He lifted his nose and tested the air. The scent was sharp and strange — sunscreen, nylon, and something sweet like dried mango. Huckleberry's ears rotated forward like two fuzzy satellites. He rose onto his hind legs, swaying slightly, and peered over the bushes.</p>
+
+      <p>There, at the far edge of the meadow, walked a hiker. She had trekking poles that clicked against stone, a wide-brimmed hat, and a bright green pack. She was humming a song — something tuneless and cheerful — and she hadn't seen him yet.</p>
+
+      <p>Huckleberry dropped to all fours. His heart beat a little faster. His mother's lessons echoed in some deep corner of his brain: <em>big creatures on two legs are trouble.</em> But trouble was also interesting, and Huckleberry was, above all else, curious.</p>
+
+      <p>He took three cautious steps into the open. The dew soaked his belly fur. A grasshopper launched itself off his nose and he flinched — then felt embarrassed about it, the way only a young bear can.</p>
+
+      <p>The hiker stopped. She saw him.</p>
+
+      <p>For a long moment they regarded each other across sixty yards of wildflowers. The breeze carried the meadow between them — grass and pine and the faintest hint of snow from the peaks above.</p>
+
+      <p>The hiker spoke. Her voice was calm, low, almost musical. "Well, hello there, little bear. You're a handsome one, aren't you?" She didn't shout. She didn't run. She slowly raised her hands so she looked a little bigger, and she began stepping backward, one careful foot behind the other, still talking in that easy, steady tone.</p>
+
+      <p>"I'm just passing through your meadow. It's a beautiful meadow. I'll be out of your way in a minute."</p>
+
+      <p>Huckleberry sniffed once more. The strange scent was fading. The creature was leaving, just as his mother said the good ones do. He flicked his ears, turned his head to check for the grasshopper (it was gone), and then ambled back toward the huckleberry bushes. Breakfast was, after all, more interesting than anything that carried trekking poles.</p>
+
+      <p>The hiker crested the ridge ten minutes later. She paused, looked back over the meadow one last time, and smiled. Somewhere below, a young bear was eating berries in the mist, and the mountain went on being the mountain — vast, patient, and shared.</p>
+
+      <p class="story-end">🐻 🌲 🏔️ 🌲 🐻</p>
+    </div>
+
+    <div class="story-decoration right">
+      <svg viewBox="0 0 60 200" class="story-tree">
+        <polygon points="30,15 8,85 52,85" fill="#4A7C59" opacity="0.7"/>
+        <polygon points="30,45 10,105 50,105" fill="#3a6324" opacity="0.8"/>
+        <polygon points="30,70 12,125 48,125" fill="#2D5016" opacity="0.9"/>
+        <rect x="25" y="125" width="10" height="30" fill="#6B3A2A"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== FOOTER ======================== -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-badge">
+      <svg viewBox="0 0 140 140" width="80" height="80">
+        <circle cx="70" cy="70" r="66" fill="none" stroke="#4A7C59" stroke-width="2"/>
+        <circle cx="70" cy="70" r="60" fill="none" stroke="#4A7C59" stroke-width="1"/>
+        <text x="70" y="38" text-anchor="middle" fill="#4A7C59" font-family="Lora" font-size="9" font-weight="600" letter-spacing="2">BEAR COUNTRY</text>
+        <!-- paw -->
+        <circle cx="52" cy="58" r="5" fill="#4A7C59"/>
+        <circle cx="70" cy="53" r="5" fill="#4A7C59"/>
+        <circle cx="88" cy="58" r="5" fill="#4A7C59"/>
+        <ellipse cx="70" cy="76" rx="13" ry="15" fill="#4A7C59"/>
+        <text x="70" y="108" text-anchor="middle" fill="#4A7C59" font-family="Lora" font-size="8" letter-spacing="2">SAFETY GUIDE</text>
+      </svg>
+    </div>
+
+    <div class="footer-credits">
+      <p>Information sourced from <a href="https://www.youtube.com/@KevinOutdoors" target="_blank" rel="noopener">Kevin Outdoors YouTube Channel</a>, the <a href="https://www.nps.gov/subjects/bears/safety.htm" target="_blank" rel="noopener">National Park Service</a>, <a href="https://www.fws.gov/" target="_blank" rel="noopener">US Fish &amp; Wildlife Service</a>, and scientific research.</p>
+      <p class="footer-disclaimer">This guide is for educational purposes. Always follow local regulations and ranger recommendations for your specific area.</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="https://www.youtube.com/playlist?list=PL71uE0jHe7onglMS90kp4_-FrVaPEZKHN" target="_blank" rel="noopener">Kevin Outdoors Bear Safety Playlist →</a>
+    </div>
+
+    <div class="footer-trees">
+      <svg viewBox="0 0 400 60" width="300" height="45" class="footer-tree-line">
+        <polygon points="20,60 30,15 40,60" fill="#2D5016" opacity="0.5"/>
+        <polygon points="50,60 62,10 74,60" fill="#2D5016" opacity="0.6"/>
+        <polygon points="90,60 100,20 110,60" fill="#2D5016" opacity="0.4"/>
+        <polygon points="130,60 145,5 160,60" fill="#2D5016" opacity="0.7"/>
+        <polygon points="180,60 190,18 200,60" fill="#2D5016" opacity="0.5"/>
+        <polygon points="220,60 235,8 250,60" fill="#2D5016" opacity="0.6"/>
+        <polygon points="270,60 280,22 290,60" fill="#2D5016" opacity="0.4"/>
+        <polygon points="310,60 325,12 340,60" fill="#2D5016" opacity="0.5"/>
+        <polygon points="360,60 372,18 384,60" fill="#2D5016" opacity="0.6"/>
+      </svg>
+    </div>
+
+    <p class="footer-copy">&copy; 2026 Bear Safety Guide. Stay safe out there.</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
